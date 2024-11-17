@@ -1,0 +1,99 @@
+#include <algorithm>
+#include <iostream>
+#include <limits>
+#include <vector>
+
+using namespace std;
+
+int main() {
+  int n;
+  cin >> n;
+
+  vector<vector<int>> distances(n, vector<int>(n));
+  for (int i = 0; i < n; ++i)
+    for (int j = 0; j < n; ++j)
+      cin >> distances[i][j];
+
+  vector<int> cities(n);
+  for (int i = 0; i < n; ++i)
+    cities[i] = i;
+
+  int min_path_length = numeric_limits<int>::max();
+  vector<int> best_path;
+
+  do {
+    int path_length = 0;
+    for (int i = 0; i < n - 1; ++i)
+      path_length += distances[cities[i]][cities[i + 1]];
+
+    if (path_length < min_path_length) {
+      min_path_length = path_length;
+      best_path = cities;
+    }
+  } while (next_permutation(cities.begin(), cities.end()));
+
+  cout << min_path_length << endl;
+  for (int city : best_path)
+    cout << city + 1 << " ";
+  cout << endl;
+
+  return 0;
+}
+
+#include <algorithm>
+#include <iostream>
+#include <limits>
+#include <vector>
+
+using namespace std;
+
+int main() {
+  int n;
+  cin >> n;
+
+  vector<vector<int>> distances(n, vector<int>(n));
+  for (int i = 0; i < n; ++i)
+    for (int j = 0; j < n; ++j)
+      cin >> distances[i][j];
+
+  vector<int> cities(n);
+  for (int i = 0; i < n; ++i)
+    cities[i] = i;
+
+  int min_path_length = numeric_limits<int>::max();
+  vector<int> best_path;
+
+  do {
+    int path_length = 0;
+    for (int i = 0; i < n - 1; ++i)
+      path_length += distances[cities[i]][cities[i + 1]];
+
+    if (path_length < min_path_length) {
+      min_path_length = path_length;
+      best_path = cities;
+    }
+  } while (next_permutation(cities.begin(), cities.end()));
+
+  cout << min_path_length << endl;
+  for (int city : best_path)
+    cout << city + 1 << " ";
+  cout << endl;
+
+  return 0;
+}
+
+#include <algorithm>
+#include <iostream>
+#include <limits>
+#include <vector>
+
+using namespace std;
+
+int main() {
+  int n;
+  cin >> n;
+
+  vector<vector<int>> distances(n, vector<int>(n));
+  for (int i = 0; i < n; ++i)
+    for (int j = 0; j < n; ++j)
+      cin >> distances[i][j];
