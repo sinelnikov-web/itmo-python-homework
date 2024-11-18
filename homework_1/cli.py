@@ -13,7 +13,7 @@ def cli():
 
 
 @click.command("nl")
-@click.argument("filename")
+@click.argument("filename", required=False)
 def nl_command(filename: str):
     for line_number, line in nl(filename):
         line_number = f"{line_number}".rjust(6, " ")
@@ -40,21 +40,30 @@ def wc_command(filenames: str):
         if len(filenames) > 1:
             sys.stdout.write(f" {lines} {words} {bytes} total\n")
 
+    if len(filenames) == 0:
+        counts = wc()
+        lines = str(counts["lines"]).rjust(7, " ")
+        words = str(counts["words"]).rjust(7, " ")
+        bytes = str(counts["bytes"]).rjust(7, " ")
+        sys.stdout.write(f" {lines} {words} {bytes}\n")
+
 
 @click.command("tail")
 @click.argument("filenames", nargs=-1)
 def tail_command(filenames: list[str]):
-    for idx, file in enumerate(filenames):
-        if len(filenames) > 1:
-            sys.stdout.write(f"==> {file} <==\n")
+    if len(filenames) > 0:
+        for idx, file in enumerate(filenames):
+            if len(filenames) > 1:
+                sys.stdout.write(f"==> {file} <==\n")
 
-        sys.stdout.write("\n".join(tail(file)))
+            sys.stdout.write("\n".join(tail(file)))
 
-        sys.stdout.write("\n")
-
-        if idx < len(filenames) - 1:
             sys.stdout.write("\n")
 
+            if idx < len(filenames) - 1:
+                sys.stdout.write("\n")
+    else:
+        sys.stdout.write("".join(tail()))
 
 
 cli.add_command(nl_command)

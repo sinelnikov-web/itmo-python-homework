@@ -32,3 +32,14 @@ def test_cli():
         assert out1 == out2
         assert err1 == err2
         assert exitcode1 == exitcode2
+
+    command_our = ["python", "homework_1/cli.py", "wc"]
+    command_their = ["wc"]
+    data1 = b"a\nb\nc\n"
+    data2 = b"a\nb\nc\n"
+    out1, err1, exitcode1 = capture(command_our, data1)
+    out2, err2, exitcode2 = capture(command_their, data2)
+
+    assert out1 == out2
+    assert err1 == err2
+    assert exitcode1 == exitcode2

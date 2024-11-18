@@ -7,11 +7,9 @@ FILENAMES = [
 ]
 
 
-def capture(command: list[str]):
+def capture(command: list[str], data: bytes | None = None):
     proc = subprocess.Popen(
-        command,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
+        command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE
     )
-    out, err = proc.communicate()
+    out, err = proc.communicate(data)
     return out, err, proc.returncode
