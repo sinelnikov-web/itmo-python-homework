@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "homework-2"
+version = "0.1.0"
+description = "latex utils"
+authors = ["Maxim Sinelnikov <sinelnikov-web@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+setuptools = "^75.6.0"
+wheel = "^0.45.1"
+twine = "^5.1.1"
+my-latex-lib = "^0.3"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
