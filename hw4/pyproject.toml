@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "homework-4"
+version = "0.1.0"
+description = "threads and processes"
+authors = ["Maxim Sinelnikov <sinelnikov-web@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

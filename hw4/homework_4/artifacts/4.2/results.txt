@@ -1,0 +1,96 @@
+jobs: 1
+ThreadPoolExecutor: time = 0.7085 seconds, result = 1.0000000785399288
+ProcessPoolExecutor: time = 1.0496 seconds, result = 1.0000000785399288
+
+jobs: 2
+ThreadPoolExecutor: time = 0.6286 seconds, result = 1.0000000785398064
+ProcessPoolExecutor: time = 0.4076 seconds, result = 1.0000000785398064
+
+jobs: 3
+ThreadPoolExecutor: time = 0.6466 seconds, result = 1.0000000785398058
+ProcessPoolExecutor: time = 0.2913 seconds, result = 1.0000000785398058
+
+jobs: 4
+ThreadPoolExecutor: time = 0.6310 seconds, result = 1.000000078539799
+ProcessPoolExecutor: time = 0.2307 seconds, result = 1.000000078539799
+
+jobs: 5
+ThreadPoolExecutor: time = 0.6308 seconds, result = 1.000000078539829
+ProcessPoolExecutor: time = 0.2027 seconds, result = 1.000000078539829
+
+jobs: 6
+ThreadPoolExecutor: time = 0.6313 seconds, result = 1.0000000785398386
+ProcessPoolExecutor: time = 0.1792 seconds, result = 1.0000000785398386
+
+jobs: 7
+ThreadPoolExecutor: time = 0.6291 seconds, result = 1.0000000785398586
+ProcessPoolExecutor: time = 0.1634 seconds, result = 1.0000000785398586
+
+jobs: 8
+ThreadPoolExecutor: time = 0.6448 seconds, result = 1.000000078539804
+ProcessPoolExecutor: time = 0.1616 seconds, result = 1.000000078539804
+
+jobs: 9
+ThreadPoolExecutor: time = 0.6283 seconds, result = 1.0000000785398133
+ProcessPoolExecutor: time = 0.1640 seconds, result = 1.0000000785398133
+
+jobs: 10
+ThreadPoolExecutor: time = 0.6305 seconds, result = 1.0000000785398198
+ProcessPoolExecutor: time = 0.1681 seconds, result = 1.0000000785398198
+
+jobs: 11
+ThreadPoolExecutor: time = 0.6317 seconds, result = 1.0000000785398793
+ProcessPoolExecutor: time = 0.1724 seconds, result = 1.0000000785398793
+
+jobs: 12
+ThreadPoolExecutor: time = 0.6304 seconds, result = 1.000000078539852
+ProcessPoolExecutor: time = 0.1750 seconds, result = 1.000000078539852
+
+jobs: 13
+ThreadPoolExecutor: time = 0.6304 seconds, result = 1.0000000785398886
+ProcessPoolExecutor: time = 0.1831 seconds, result = 1.0000000785398886
+
+jobs: 14
+ThreadPoolExecutor: time = 0.6304 seconds, result = 1.0000000785398893
+ProcessPoolExecutor: time = 0.1866 seconds, result = 1.0000000785398893
+
+jobs: 15
+ThreadPoolExecutor: time = 0.6503 seconds, result = 1.0000000785398826
+ProcessPoolExecutor: time = 0.1941 seconds, result = 1.0000000785398826
+
+jobs: 16
+ThreadPoolExecutor: time = 0.6358 seconds, result = 1.00000007853981
+ProcessPoolExecutor: time = 0.2285 seconds, result = 1.00000007853981
+
+jobs: 17
+ThreadPoolExecutor: time = 0.7238 seconds, result = 1.0000000785398406
+ProcessPoolExecutor: time = 0.2002 seconds, result = 1.0000000785398406
+
+jobs: 18
+ThreadPoolExecutor: time = 0.6312 seconds, result = 1.0000000785398866
+ProcessPoolExecutor: time = 0.2061 seconds, result = 1.0000000785398866
+
+jobs: 19
+ThreadPoolExecutor: time = 0.6296 seconds, result = 1.0000000785399374
+ProcessPoolExecutor: time = 0.2556 seconds, result = 1.0000000785399374
+
+jobs: 20
+ThreadPoolExecutor: time = 0.6335 seconds, result = 1.000000078539818
+ProcessPoolExecutor: time = 0.2262 seconds, result = 1.000000078539818
+
+jobs: 21
+ThreadPoolExecutor: time = 0.6299 seconds, result = 1.0000000785398933
+ProcessPoolExecutor: time = 0.2309 seconds, result = 1.0000000785398933
+
+jobs: 22
+ThreadPoolExecutor: time = 0.6311 seconds, result = 1.0000000785398895
+ProcessPoolExecutor: time = 0.3053 seconds, result = 1.0000000785398895
+
+jobs: 23
+ThreadPoolExecutor: time = 0.6333 seconds, result = 1.00000007853992
+ProcessPoolExecutor: time = 0.2409 seconds, result = 1.00000007853992
+
+jobs: 24
+ThreadPoolExecutor: time = 0.6299 seconds, result = 1.0000000785399346
+ProcessPoolExecutor: time = 0.2525 seconds, result = 1.0000000785399346
+

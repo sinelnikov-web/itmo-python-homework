@@ -1,0 +1,6 @@
+[2024-12-09 13:35:47.474668] Main Process: Received message: Hello World!
+[2024-12-09 13:35:47.475664] Process A: Received message: Hello World!
+[2024-12-09 13:35:47.475996] Process A: Result message: hello world!
+[2024-12-09 13:35:52.478937] Process B: Received message: hello world!
+[2024-12-09 13:35:52.481874] Process B: Result message: uryyb jbeyq!
+[2024-12-09 13:35:52.482391] Main Process: Received coded message: uryyb jbeyq!
